@@ -702,6 +702,66 @@
         )
       )
     )
+    (symbol "Earth_3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "Earth_3" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global ground gnd" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"Earth\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Earth_3_0_1"
+        (polyline
+          (pts
+            (xy -0.635 -1.905)
+            (xy 0.635 -1.905)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -0.127 -2.54)
+            (xy 0.127 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy -1.27 -1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "Earth_3_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide
+          (name "Earth" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Interface_USB:CH340C" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -5.08 13.97 0)
         (effects (font (size 1.27 1.27)) (justify right))
@@ -907,6 +967,251 @@
         (pin input line (at -7.62 0 0) (length 2.54)
           (name "DIN" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Power_Protection:TPD4E02B04DQA" (pin_names hide) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 2.54 -11.43 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "TPD4E02B04DQA" (at 7.62 1.905 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm" (at 7.62 0 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf" (at 2.54 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "ESD protection USB HDMI" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "4-Channel ESD Protection Diode for USB Type-C and HDMI 2.0, USON-10" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "USON*2.5x1.0mm*P0.5mm*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "TPD4E02B04DQA_0_0"
+        (pin passive line (at 2.54 -15.24 90) (length 2.54)
+          (name "G" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "TPD4E02B04DQA_0_1"
+        (rectangle (start -5.08 12.7) (end 5.08 -12.7)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (polyline
+          (pts
+            (xy -5.08 -7.62)
+            (xy 2.54 -7.62)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 -2.54)
+            (xy 2.54 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 5.08)
+            (xy 2.54 5.08)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 10.16)
+            (xy 2.54 10.16)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 10.16)
+            (xy 2.54 -12.7)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 -7.62)
+            (xy 0 -8.255)
+            (xy 0 -6.985)
+            (xy -1.27 -7.62)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 -2.54)
+            (xy 0 -3.175)
+            (xy 0 -1.905)
+            (xy -1.27 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 5.08)
+            (xy 0 4.445)
+            (xy 0 5.715)
+            (xy -1.27 5.08)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 10.16)
+            (xy 0 9.525)
+            (xy 0 10.795)
+            (xy -1.27 10.16)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (circle (center 2.54 -7.62) (radius 0.254)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (circle (center 2.54 -2.54) (radius 0.254)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (circle (center 2.54 5.08) (radius 0.254)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+      )
+      (symbol "TPD4E02B04DQA_1_1"
+        (polyline
+          (pts
+            (xy -1.524 -8.255)
+            (xy -1.27 -8.001)
+            (xy -1.27 -7.239)
+            (xy -1.016 -6.985)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.524 -3.175)
+            (xy -1.27 -2.921)
+            (xy -1.27 -2.159)
+            (xy -1.016 -1.905)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.524 4.445)
+            (xy -1.27 4.699)
+            (xy -1.27 5.461)
+            (xy -1.016 5.715)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.524 9.525)
+            (xy -1.27 9.779)
+            (xy -1.27 10.541)
+            (xy -1.016 10.795)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 -7.62)
+            (xy -2.54 -8.255)
+            (xy -2.54 -6.985)
+            (xy -1.27 -7.62)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 -2.54)
+            (xy -2.54 -3.175)
+            (xy -2.54 -1.905)
+            (xy -1.27 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 5.08)
+            (xy -2.54 4.445)
+            (xy -2.54 5.715)
+            (xy -1.27 5.08)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 10.16)
+            (xy -2.54 9.525)
+            (xy -2.54 10.795)
+            (xy -1.27 10.16)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at -7.62 10.16 0) (length 2.54)
+          (name "IO1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin free line (at -7.62 7.62 0) (length 2.54)
+          (name "NC" (effects (font (size 1.27 1.27))))
+          (number "10" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -7.62 5.08 0) (length 2.54)
+          (name "IO2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -7.62 -2.54 0) (length 2.54)
+          (name "IO3" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -7.62 -7.62 0) (length 2.54)
+          (name "IO4" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
+        )
+        (pin free line (at -7.62 -10.16 0) (length 2.54)
+          (name "NC" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
+        )
+        (pin free line (at -7.62 -5.08 0) (length 2.54)
+          (name "NC" (effects (font (size 1.27 1.27))))
+          (number "7" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 -15.24 90) (length 2.54) hide
+          (name "G" (effects (font (size 1.27 1.27))))
+          (number "8" (effects (font (size 1.27 1.27))))
+        )
+        (pin free line (at -7.62 2.54 0) (length 2.54)
+          (name "NC" (effects (font (size 1.27 1.27))))
+          (number "9" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1384,6 +1689,9 @@
   (junction (at 105.41 182.88) (diameter 0) (color 0 0 0 1)
     (uuid 4a023e1f-6a8b-4ce1-8e70-a7a81fb246b7)
   )
+  (junction (at 250.19 163.83) (diameter 0) (color 0 0 0 0)
+    (uuid 4d304030-e01f-4328-92b4-0d4c0dbcdb10)
+  )
   (junction (at 44.45 182.88) (diameter 0) (color 0 0 0 1)
     (uuid 4d6cfce0-8c3f-4860-b8ff-69cabfe8ff02)
   )
@@ -1404,6 +1712,9 @@
   )
   (junction (at 105.41 22.86) (diameter 0) (color 255 0 0 1)
     (uuid 5c4e2270-d840-4467-b98d-ef785042e496)
+  )
+  (junction (at 196.85 166.37) (diameter 0) (color 0 0 0 0)
+    (uuid 651fd28d-66af-4ac1-bd3f-7e80f43f8a58)
   )
   (junction (at 217.17 208.28) (diameter 0) (color 0 0 0 0)
     (uuid 683234f7-64fe-47ef-a125-064388651bfd)
@@ -1438,6 +1749,9 @@
   (junction (at 24.13 148.59) (diameter 0) (color 0 0 0 1)
     (uuid 9d41656d-5d11-4893-8580-6fd8ee936806)
   )
+  (junction (at 195.58 163.83) (diameter 0) (color 0 0 0 0)
+    (uuid 9e37c8e2-a3b2-4bfe-86ee-d0d7caf935ed)
+  )
   (junction (at 105.41 57.15) (diameter 0) (color 255 0 0 1)
     (uuid a019f273-6275-42c6-92ba-b35b15488c17)
   )
@@ -1467,6 +1781,9 @@
   )
   (junction (at 24.13 22.86) (diameter 0) (color 255 0 0 1)
     (uuid bbe3fbe8-6e17-4872-ab5a-16e1d4ca092b)
+  )
+  (junction (at 251.46 166.37) (diameter 0) (color 0 0 0 0)
+    (uuid bcf6e870-ff89-4d13-9031-8df2c844d57f)
   )
   (junction (at 85.09 45.72) (diameter 0) (color 0 0 0 1)
     (uuid c4b51366-5701-44cd-99a8-6b36f5d97d82)
@@ -1502,6 +1819,10 @@
     (uuid ffc47678-528d-4e74-9a5f-d6c50e1a0d24)
   )
 
+  (wire (pts (xy 218.44 182.88) (xy 218.44 180.34))
+    (stroke (width 0) (type default))
+    (uuid 004c0849-e1a4-4c7e-a8eb-364d8d358de8)
+  )
   (wire (pts (xy 64.77 66.04) (xy 64.77 80.01))
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 012edb77-8d7a-430e-893f-0859040f8bd6)
@@ -1574,7 +1895,7 @@
     (stroke (width 0) (type default))
     (uuid 0d863fc9-c334-4fdd-9d2b-09021a81d13d)
   )
-  (polyline (pts (xy 260.35 151.13) (xy 194.31 151.13))
+  (polyline (pts (xy 260.35 152.4) (xy 181.61 152.4))
     (stroke (width 0) (type default))
     (uuid 0dda0500-73a1-47c8-af93-7835581d5ab4)
   )
@@ -1666,7 +1987,7 @@
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 23165c51-2196-477b-acf2-06508c6c1c85)
   )
-  (wire (pts (xy 21.59 38.1) (xy 26.67 38.1))
+  (wire (pts (xy 22.86 38.1) (xy 26.67 38.1))
     (stroke (width 0.25) (type default) (color 132 0 132 1))
     (uuid 233e9ef4-1bc4-4935-9cd7-0429e3962237)
   )
@@ -1691,6 +2012,10 @@
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 2744dcc3-a2bf-4b73-8204-718b002fe9da)
   )
+  (wire (pts (xy 213.36 181.61) (xy 195.58 181.61))
+    (stroke (width 0) (type default))
+    (uuid 274c120e-38c2-4ac6-8c4c-7342cc313165)
+  )
   (wire (pts (xy 64.77 90.17) (xy 64.77 91.44))
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 28345fa9-cb2d-471b-980c-42ccdc9b67e9)
@@ -1700,7 +2025,7 @@
     (uuid 28538301-28b8-44c7-b107-bdb1805f0010)
   )
 
-  (wire (pts (xy 205.74 166.37) (xy 210.82 166.37))
+  (wire (pts (xy 199.39 158.75) (xy 204.47 158.75))
     (stroke (width 0) (type default))
     (uuid 28985955-5745-4761-8f1e-c6afb8bd6cbd)
   )
@@ -1740,6 +2065,10 @@
     (stroke (width 0.25) (type default) (color 132 0 132 1))
     (uuid 2e88f6f8-f7bb-4c7e-9f34-35717d884767)
   )
+  (wire (pts (xy 251.46 166.37) (xy 251.46 182.88))
+    (stroke (width 0) (type default))
+    (uuid 2ecd3103-2437-4548-b7ab-faf576ad9cd5)
+  )
   (wire (pts (xy 20.32 72.39) (xy 26.67 72.39))
     (stroke (width 0) (type default) (color 132 0 132 1))
     (uuid 2f8cce04-b5ba-41aa-ab6d-741aed3eb0e7)
@@ -1764,6 +2093,10 @@
     (stroke (width 0) (type default))
     (uuid 3316d58a-e7a7-4a06-94c0-a172288de24f)
   )
+  (wire (pts (xy 250.19 163.83) (xy 252.73 163.83))
+    (stroke (width 0) (type default))
+    (uuid 345719e9-d04a-4bc2-a3e0-53c5c2a7ee2e)
+  )
   (wire (pts (xy 64.77 22.86) (xy 64.77 24.13))
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 34b1b459-7224-470d-8ec4-922cc1fbfbcb)
@@ -1784,7 +2117,7 @@
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 38d25fb9-05ef-4d34-b547-e1983469f7d6)
   )
-  (wire (pts (xy 246.38 176.53) (xy 247.65 176.53))
+  (wire (pts (xy 240.03 168.91) (xy 241.3 168.91))
     (stroke (width 0) (type default))
     (uuid 38fff515-1075-4025-90ed-629589afe20a)
   )
@@ -1804,6 +2137,11 @@
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 3b0868c2-d6c4-4ed7-8274-c23939ac87f5)
   )
+  (polyline (pts (xy 181.61 200.66) (xy 181.61 233.68))
+    (stroke (width 0) (type default))
+    (uuid 3b1bba6b-caeb-483d-bad1-700356ff6b4f)
+  )
+
   (wire (pts (xy 201.93 134.62) (xy 201.93 138.43))
     (stroke (width 0) (type default))
     (uuid 3bb91a3d-6bdc-40a3-bcfb-6ade8d7fcc12)
@@ -1811,6 +2149,10 @@
   (wire (pts (xy 44.45 91.44) (xy 54.61 91.44))
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 3bccaba0-ed13-47e1-b509-b5013e8d29a4)
+  )
+  (wire (pts (xy 231.14 182.88) (xy 251.46 182.88))
+    (stroke (width 0) (type default))
+    (uuid 3ccb5ad8-8e4c-4be9-b185-86bd974fb94b)
   )
   (wire (pts (xy 64.77 55.88) (xy 64.77 57.15))
     (stroke (width 0) (type default) (color 255 0 0 1))
@@ -1849,13 +2191,17 @@
     (stroke (width 0) (type default))
     (uuid 44415712-59fe-43ce-b4e0-5af2d153b6c6)
   )
-  (wire (pts (xy 246.38 179.07) (xy 251.46 179.07))
+  (wire (pts (xy 240.03 171.45) (xy 245.11 171.45))
     (stroke (width 0) (type default))
     (uuid 4751a71a-304d-42ac-a1a6-baf67c4ee905)
   )
   (wire (pts (xy 105.41 124.46) (xy 105.41 125.73))
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 4796887b-f6f0-4c06-80b4-52eea0227251)
+  )
+  (wire (pts (xy 194.31 163.83) (xy 195.58 163.83))
+    (stroke (width 0) (type default))
+    (uuid 48b18392-b8c0-4375-b4ae-a379aa3f1e21)
   )
   (wire (pts (xy 85.09 160.02) (xy 85.09 161.29))
     (stroke (width 0) (type default) (color 255 0 0 1))
@@ -1877,6 +2223,10 @@
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 4c83eb8d-7fc4-4834-991d-b3e81bf0a49d)
   )
+  (wire (pts (xy 195.58 163.83) (xy 195.58 181.61))
+    (stroke (width 0) (type default))
+    (uuid 4c8835a9-83ec-4e3c-8922-6c7a861c648b)
+  )
   (wire (pts (xy 276.86 38.1) (xy 281.94 38.1))
     (stroke (width 0) (type default))
     (uuid 4dc70683-a4f1-4b0d-85da-65d111286a4e)
@@ -1892,6 +2242,10 @@
   (wire (pts (xy 105.41 80.01) (xy 115.57 80.01))
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 4fadd1e7-039d-459f-8a0d-d8c7987a82b7)
+  )
+  (wire (pts (xy 201.93 193.04) (xy 205.74 193.04))
+    (stroke (width 0) (type default))
+    (uuid 4fbd5415-ecd3-4136-9502-bc79b734f94b)
   )
   (wire (pts (xy 280.67 226.06) (xy 276.86 226.06))
     (stroke (width 0) (type default))
@@ -1939,11 +2293,15 @@
     (stroke (width 0.25) (type default) (color 132 0 132 1))
     (uuid 53dee079-1846-415f-aa9f-d0e19b5d6abf)
   )
+  (wire (pts (xy 196.85 180.34) (xy 218.44 180.34))
+    (stroke (width 0) (type default))
+    (uuid 54862e64-024e-4056-873c-bc51e39c3d98)
+  )
   (wire (pts (xy 34.29 22.86) (xy 34.29 30.48))
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 55186047-46e1-4ab0-b07a-19c017d99902)
   )
-  (polyline (pts (xy 260.35 233.68) (xy 194.31 233.68))
+  (polyline (pts (xy 260.35 233.68) (xy 181.61 233.68))
     (stroke (width 0) (type default))
     (uuid 55d78970-12be-4ba1-b554-d1cdf66939bb)
   )
@@ -1956,7 +2314,7 @@
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 56347bc6-e41a-4a51-a249-518e20bc06da)
   )
-  (wire (pts (xy 246.38 173.99) (xy 251.46 173.99))
+  (wire (pts (xy 240.03 166.37) (xy 251.46 166.37))
     (stroke (width 0) (type default))
     (uuid 56d35558-d594-4b5c-bbe7-119d336e5456)
   )
@@ -2013,11 +2371,6 @@
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 5ea5a119-1e16-46a0-99c6-1f8932f18758)
   )
-  (polyline (pts (xy 194.31 233.68) (xy 194.31 199.39))
-    (stroke (width 0) (type default))
-    (uuid 605bd805-2b2e-4425-903a-4607da6dd6ee)
-  )
-
   (wire (pts (xy 293.37 201.93) (xy 293.37 205.74))
     (stroke (width 0) (type default))
     (uuid 606b2ddd-5b10-4e59-bcf4-b9ad62a2e7e0)
@@ -2033,6 +2386,10 @@
   (wire (pts (xy 123.19 38.1) (xy 123.19 49.53))
     (stroke (width 0) (type default) (color 132 0 132 1))
     (uuid 62d86399-80ea-49a0-b2a5-6ccce3c9d9d5)
+  )
+  (wire (pts (xy 195.58 163.83) (xy 204.47 163.83))
+    (stroke (width 0) (type default))
+    (uuid 65899672-adfe-42e7-a6db-994785a9231d)
   )
   (wire (pts (xy 24.13 158.75) (xy 24.13 160.02))
     (stroke (width 0) (type default) (color 255 0 0 1))
@@ -2062,7 +2419,7 @@
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 6858ab15-fdf0-452c-9554-d5b605abf02f)
   )
-  (wire (pts (xy 246.38 171.45) (xy 251.46 171.45))
+  (wire (pts (xy 240.03 163.83) (xy 250.19 163.83))
     (stroke (width 0) (type default))
     (uuid 6a58b7ba-035b-4508-9331-5a7b46a1123e)
   )
@@ -2102,9 +2459,13 @@
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 7471187d-9eb8-4292-9dfc-19d49df687dd)
   )
-  (wire (pts (xy 205.74 179.07) (xy 210.82 179.07))
+  (wire (pts (xy 199.39 171.45) (xy 204.47 171.45))
     (stroke (width 0) (type default))
     (uuid 75f26795-59c3-4033-8713-ba8a6bd43a86)
+  )
+  (wire (pts (xy 250.19 163.83) (xy 250.19 180.34))
+    (stroke (width 0) (type default))
+    (uuid 765dcfd0-423e-403a-ab26-061b5823bea1)
   )
   (wire (pts (xy 242.57 208.28) (xy 237.49 208.28))
     (stroke (width 0) (type default))
@@ -2142,7 +2503,7 @@
     (stroke (width 0) (type default))
     (uuid 7bcdc723-92c7-4f0f-881c-9ba47ad93cdb)
   )
-  (polyline (pts (xy 194.31 199.39) (xy 260.35 199.39))
+  (polyline (pts (xy 181.61 200.66) (xy 260.35 200.66))
     (stroke (width 0) (type default))
     (uuid 7d95abe9-bd2b-495b-aa7a-ba0600a68267)
   )
@@ -2163,7 +2524,7 @@
     (stroke (width 0) (type default) (color 132 0 132 1))
     (uuid 7fe76f9c-0a3f-4520-b121-c89e33489e29)
   )
-  (wire (pts (xy 246.38 184.15) (xy 251.46 184.15))
+  (wire (pts (xy 240.03 176.53) (xy 245.11 176.53))
     (stroke (width 0) (type default))
     (uuid 81fbc535-ccaa-4779-b8c6-cefdab1b32d4)
   )
@@ -2244,10 +2605,6 @@
     (stroke (width 0) (type default))
     (uuid 8ee52d83-8ee3-4d84-8596-d6fe18bf02c2)
   )
-  (wire (pts (xy 267.97 181.61) (xy 267.97 161.29))
-    (stroke (width 0) (type default))
-    (uuid 8f08ff47-a756-400f-8d9a-dad6f395c731)
-  )
   (wire (pts (xy 255.27 106.68) (xy 259.08 106.68))
     (stroke (width 0) (type default))
     (uuid 9005b82c-0338-41a7-ac0f-7562a06c9149)
@@ -2268,7 +2625,7 @@
     (stroke (width 0) (type default))
     (uuid 91a7e65c-d2db-48d0-9689-fd8988617031)
   )
-  (wire (pts (xy 209.55 168.91) (xy 210.82 168.91))
+  (wire (pts (xy 203.2 161.29) (xy 204.47 161.29))
     (stroke (width 0) (type default))
     (uuid 92b25ba2-52c4-4b85-9277-3fc7c4e64f2e)
   )
@@ -2283,10 +2640,6 @@
   (wire (pts (xy 24.13 21.59) (xy 24.13 22.86))
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid 96472b04-4155-4c8b-8a15-3d5ebe0053b2)
-  )
-  (wire (pts (xy 205.74 173.99) (xy 210.82 173.99))
-    (stroke (width 0) (type default))
-    (uuid 96ce7204-17fc-41c9-a278-0baff164e137)
   )
   (wire (pts (xy 64.77 114.3) (xy 74.93 114.3))
     (stroke (width 0) (type default) (color 0 0 0 1))
@@ -2305,9 +2658,17 @@
     (stroke (width 0) (type default))
     (uuid 9a58a906-e026-4a52-a126-2cec651cee24)
   )
+  (wire (pts (xy 226.06 180.34) (xy 250.19 180.34))
+    (stroke (width 0) (type default))
+    (uuid 9aa2fbea-7a92-4a19-a9d8-de1d62383548)
+  )
   (wire (pts (xy 218.44 35.56) (xy 223.52 35.56))
     (stroke (width 0) (type default))
     (uuid 9abcd1f3-f37a-4d77-b96e-8106772ac8c8)
+  )
+  (wire (pts (xy 213.36 182.88) (xy 213.36 181.61))
+    (stroke (width 0) (type default))
+    (uuid 9b30571f-eb4c-42f1-bca9-4dc24f312eb3)
   )
   (wire (pts (xy 24.13 125.73) (xy 34.29 125.73))
     (stroke (width 0) (type default) (color 255 0 0 1))
@@ -2322,15 +2683,23 @@
     (uuid 9d9e7314-dc25-4612-b45e-6743dbdf6b7a)
   )
 
+  (wire (pts (xy 226.06 182.88) (xy 226.06 180.34))
+    (stroke (width 0) (type default))
+    (uuid 9db04dc8-5732-4544-a46d-a884c24083f1)
+  )
   (wire (pts (xy 85.09 66.04) (xy 85.09 80.01))
     (stroke (width 0) (type default) (color 0 0 0 1))
     (uuid 9dc83357-ced6-49ba-907f-24f6eb8e4544)
+  )
+  (wire (pts (xy 196.85 180.34) (xy 196.85 166.37))
+    (stroke (width 0) (type default))
+    (uuid 9eaa3b11-b442-4e88-9ac4-e483e959081d)
   )
   (wire (pts (xy 264.16 40.64) (xy 269.24 40.64))
     (stroke (width 0) (type default))
     (uuid 9fcc9bf4-c10c-4677-b97d-ea9df346eee7)
   )
-  (polyline (pts (xy 194.31 151.13) (xy 194.31 100.33))
+  (polyline (pts (xy 181.61 152.4) (xy 181.61 100.33))
     (stroke (width 0) (type default))
     (uuid a0089043-61fb-439e-9868-862e2aed5381)
   )
@@ -2339,7 +2708,11 @@
     (stroke (width 0) (type default))
     (uuid a092dc11-3292-4650-8c06-294b55e90e96)
   )
-  (wire (pts (xy 196.85 168.91) (xy 201.93 168.91))
+  (wire (pts (xy 194.31 166.37) (xy 196.85 166.37))
+    (stroke (width 0) (type default))
+    (uuid a0aed153-3f0d-49a1-8078-382c33b78276)
+  )
+  (wire (pts (xy 184.15 161.29) (xy 195.58 161.29))
     (stroke (width 0) (type default))
     (uuid a0d529ff-c127-4113-90de-8e55b5537a14)
   )
@@ -2408,6 +2781,10 @@
     (stroke (width 0.25) (type default) (color 132 0 132 1))
     (uuid b0502d5c-cfe7-4581-863f-b035e0e0a097)
   )
+  (wire (pts (xy 267.97 161.29) (xy 267.97 181.61))
+    (stroke (width 0) (type default))
+    (uuid b122fd00-7398-405a-bf4d-f593b08786ef)
+  )
   (wire (pts (xy 85.09 158.75) (xy 85.09 160.02))
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid b49c267c-bb5f-460e-bccd-01980fb652f5)
@@ -2452,6 +2829,10 @@
     (stroke (width 0) (type default) (color 132 0 132 1))
     (uuid bc60f92f-2f23-43e8-a137-3717f00bc1b8)
   )
+  (wire (pts (xy 251.46 166.37) (xy 252.73 166.37))
+    (stroke (width 0) (type default))
+    (uuid bc800b1d-4235-4537-9be7-b81c17d725b6)
+  )
   (polyline (pts (xy 12.7 13.97) (xy 125.73 13.97))
     (stroke (width 0) (type default))
     (uuid be23e85b-daba-4b13-ba92-b1e70c4ffbb9)
@@ -2468,6 +2849,10 @@
   (wire (pts (xy 82.55 175.26) (xy 87.63 175.26))
     (stroke (width 0.25) (type default) (color 132 0 132 1))
     (uuid c08f5d3f-83ff-4969-be35-934ff1f7a356)
+  )
+  (wire (pts (xy 196.85 166.37) (xy 204.47 166.37))
+    (stroke (width 0) (type default))
+    (uuid c1634d3e-657b-4ace-bfc2-71f9abc02f36)
   )
   (wire (pts (xy 276.86 226.06) (xy 276.86 213.36))
     (stroke (width 0) (type default))
@@ -2486,7 +2871,7 @@
     (uuid c4400865-ceae-458b-85f1-5f051a183e70)
   )
 
-  (wire (pts (xy 246.38 166.37) (xy 251.46 166.37))
+  (wire (pts (xy 240.03 158.75) (xy 245.11 158.75))
     (stroke (width 0) (type default))
     (uuid c4754d9d-0aeb-43f7-a88d-24bde9d7dd91)
   )
@@ -2519,7 +2904,7 @@
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid ca0a3b16-011f-4b08-a6f2-5364486a98d6)
   )
-  (polyline (pts (xy 194.31 151.13) (xy 194.31 199.39))
+  (polyline (pts (xy 181.61 152.4) (xy 181.61 200.66))
     (stroke (width 0) (type default))
     (uuid cb43e4fc-4ec0-4502-a62d-00c00613e2fe)
   )
@@ -2543,10 +2928,6 @@
   (wire (pts (xy 64.77 57.15) (xy 64.77 58.42))
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid cf5c71d3-1ce9-4778-a74b-4ce793a76cda)
-  )
-  (wire (pts (xy 205.74 171.45) (xy 210.82 171.45))
-    (stroke (width 0) (type default))
-    (uuid d0dae19b-111f-41d3-ac93-c18767f4fb53)
   )
   (wire (pts (xy 62.23 140.97) (xy 67.31 140.97))
     (stroke (width 0.25) (type default) (color 132 0 132 1))
@@ -2739,6 +3120,11 @@
     (stroke (width 0) (type default) (color 255 0 0 1))
     (uuid f55d34ea-65ce-40ab-8aa3-476a8e056193)
   )
+  (polyline (pts (xy 181.61 100.33) (xy 194.31 100.33))
+    (stroke (width 0) (type default))
+    (uuid f59b6de4-3b18-4755-ba08-72ebfc4a3d47)
+  )
+
   (wire (pts (xy 264.16 60.96) (xy 269.24 60.96))
     (stroke (width 0) (type default))
     (uuid f5ff5690-8d63-414b-a73f-d1fbc0d622a9)
@@ -2800,7 +3186,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5f664255-beaa-4f8c-8fbc-b711957e141a)
   )
-  (text "USB C\n" (at 196.85 196.85 0)
+  (text "USB C\n" (at 182.88 199.39 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 77a1b017-8164-42b3-ab82-397087257cbb)
   )
@@ -2813,10 +3199,10 @@
     (uuid ea137210-d703-405e-a979-b508c0ea715b)
   )
 
-  (global_label "UD+" (shape input) (at 205.74 171.45 180) (fields_autoplaced)
+  (global_label "UD+" (shape input) (at 194.31 163.83 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 048b2c1b-e443-4768-ac45-65dce8aec137)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 199.154 171.3706 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 187.724 163.7506 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2827,10 +3213,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "UD-" (shape input) (at 205.74 173.99 180) (fields_autoplaced)
+  (global_label "UD-" (shape input) (at 194.31 166.37 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 096137ea-2100-4f7c-83e0-035ff70fbf56)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 199.154 173.9106 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 187.724 166.2906 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2841,10 +3227,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "GPIO2" (shape input) (at 21.59 38.1 180) (fields_autoplaced)
+  (global_label "GPIO16" (shape input) (at 22.86 38.1 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 1689e99e-7abf-49a6-98fe-6150e7e49433)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 13.4921 38.1794 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 13.0599 38.1 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2855,10 +3241,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "GPIO2" (shape input) (at 269.24 68.58 0) (fields_autoplaced)
+  (global_label "IO22" (shape input) (at 269.24 68.58 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 1def8348-1603-4813-b85a-ca392bdab691)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 277.3379 68.5006 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 276.5001 68.58 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2876,10 +3262,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "UD+" (shape input) (at 251.46 173.99 0) (fields_autoplaced)
+  (global_label "UD+" (shape input) (at 252.73 166.37 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 25ef47f8-ef10-4ae3-92f1-11a843fd8d35)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 258.046 174.0694 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.316 166.4494 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -3051,10 +3437,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "UD-" (shape input) (at 251.46 171.45 0) (fields_autoplaced)
+  (global_label "UD-" (shape input) (at 252.73 163.83 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b1b28d89-7c44-4416-88a5-017a1e94a95f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 258.046 171.5294 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.316 163.9094 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -3093,10 +3479,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "IO25" (shape input) (at 269.24 73.66 0) (fields_autoplaced)
+  (global_label "GPIO16" (shape input) (at 269.24 73.66 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid d59a67f9-c073-4ef5-a6cb-d064e8ea3328)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 276.0074 73.5806 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 279.0401 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -3148,7 +3534,7 @@
     (pin "2" (uuid 71846838-ff43-4df3-bcd7-c1badf2b9023))
     (pin "3" (uuid 1370b085-c0ca-4136-a2d0-3482fbd4be23))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "Q2") (unit 1)
         )
@@ -3174,7 +3560,7 @@
     (pin "1" (uuid a71d467f-6c41-4b26-9838-818f2026e342))
     (pin "2" (uuid 35eab415-07d4-46f4-9e62-601d2c6126e8))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C27") (unit 1)
         )
@@ -3202,7 +3588,7 @@
     (pin "3" (uuid 5894dcb3-866f-402f-ab65-af8e73f3b2f1))
     (pin "4" (uuid 65a6df21-acd4-478a-94ee-9dccc574fbbf))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D8") (unit 1)
         )
@@ -3227,7 +3613,7 @@
     )
     (pin "1" (uuid ffadb7d8-0883-4bba-8d78-cc68b1d7553b))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0131") (unit 1)
         )
@@ -3253,7 +3639,7 @@
     (pin "1" (uuid ca46acfa-8bbc-488a-8f27-2a9f34dfd080))
     (pin "2" (uuid fe8f3c81-a19a-4715-8022-3987a9268b1a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C17") (unit 1)
         )
@@ -3261,31 +3647,31 @@
     )
   )
 
-  (symbol (lib_id "CSP-USC16-TR:CSP-USC16-TR") (at 228.6 176.53 0) (unit 1)
+  (symbol (lib_id "CSP-USC16-TR:CSP-USC16-TR") (at 222.25 168.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0f0e2ed1-d1e4-4859-afe6-18f5601b1a09)
-    (property "Reference" "U2" (at 228.6 160.02 0)
+    (property "Reference" "U2" (at 222.25 153.67 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "CSP-USC16-TR" (at 228.6 162.56 0)
+    (property "Value" "CSP-USC16-TR" (at 222.25 154.94 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "VALCON_CSP-USC16-TR" (at 228.6 176.53 0)
+    (property "Footprint" "VALCON_CSP-USC16-TR" (at 222.25 168.91 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
-    (property "Datasheet" "" (at 228.6 176.53 0)
+    (property "Datasheet" "" (at 222.25 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "STANDARD" "Manufacturer Recommendations" (at 228.6 176.53 0)
+    (property "STANDARD" "Manufacturer Recommendations" (at 222.25 168.91 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
-    (property "MANUFACTURER" "Valcon" (at 228.6 176.53 0)
+    (property "MANUFACTURER" "Valcon" (at 222.25 168.91 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
-    (property "PARTREV" "A0" (at 228.6 176.53 0)
+    (property "PARTREV" "A0" (at 222.25 168.91 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
-    (property "MAXIMUM_PACKAGE_HEIGHT" "3.26 mm" (at 228.6 176.53 0)
+    (property "MAXIMUM_PACKAGE_HEIGHT" "3.26 mm" (at 222.25 168.91 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (pin "A1" (uuid 02d43ed9-7818-4a7a-bec8-b24b7359cf12))
@@ -3309,7 +3695,7 @@
     (pin "S3" (uuid 611f3966-2270-4d2b-b46b-7edaf7c1b094))
     (pin "S4" (uuid c935590d-6ac1-47d2-9fa1-680f68e7e4c3))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "U2") (unit 1)
         )
@@ -3337,7 +3723,7 @@
     (pin "3" (uuid 53f29dc8-4148-4a6d-9b4d-36766ced5d55))
     (pin "4" (uuid ae1d600b-59ca-495e-9caf-aa5a1d74b031))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D21") (unit 1)
         )
@@ -3365,7 +3751,7 @@
     (pin "3" (uuid 6d8ee7be-6846-4651-a429-f7713df2f419))
     (pin "4" (uuid 4987ab57-42ee-4a19-b000-25eb3f37c8e9))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D19") (unit 1)
         )
@@ -3390,7 +3776,7 @@
     )
     (pin "1" (uuid b84f9207-42bd-4d92-827f-6799248709de))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0140") (unit 1)
         )
@@ -3418,7 +3804,7 @@
     (pin "3" (uuid 377fee77-7893-4fb4-8cda-b404a11d6ebf))
     (pin "4" (uuid 839fd4b4-67bb-4ee0-a482-0b190344f071))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D25") (unit 1)
         )
@@ -3443,7 +3829,7 @@
     )
     (pin "1" (uuid 701afda9-b8b4-436c-9e50-98ce767d864d))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0146") (unit 1)
         )
@@ -3468,7 +3854,7 @@
     )
     (pin "1" (uuid 79fbc983-7fea-468d-8b5a-2bec67fd8d0e))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0112") (unit 1)
         )
@@ -3476,24 +3862,24 @@
     )
   )
 
-  (symbol (lib_id "power:Earth") (at 205.74 179.07 0) (unit 1)
+  (symbol (lib_id "power:Earth") (at 199.39 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 18413935-1bfb-4f56-a0b5-27e5b685cf54)
-    (property "Reference" "#PWR0161" (at 205.74 185.42 0)
+    (property "Reference" "#PWR0161" (at 199.39 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "Earth" (at 205.74 182.88 0)
+    (property "Value" "Earth" (at 199.39 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "" (at 205.74 179.07 0)
+    (property "Footprint" "" (at 199.39 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 205.74 179.07 0)
+    (property "Datasheet" "~" (at 199.39 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 166b47db-4eb7-4875-86bf-af268409e702))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0161") (unit 1)
         )
@@ -3519,7 +3905,7 @@
     (pin "1" (uuid db877eee-df38-48a2-95db-3bc696b15485))
     (pin "2" (uuid d04970d3-3a59-4d20-9dc4-be7ee6cca9ec))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C5") (unit 1)
         )
@@ -3547,7 +3933,7 @@
     (pin "3" (uuid 37a90859-b032-4ef4-a461-5bb540b00e9d))
     (pin "4" (uuid 685387f4-e53d-4243-8063-91b5edc75950))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D13") (unit 1)
         )
@@ -3572,7 +3958,7 @@
     )
     (pin "1" (uuid e0fc4e5d-f0ab-4083-b97a-86d3fcd4b26a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0170") (unit 1)
         )
@@ -3597,7 +3983,7 @@
     )
     (pin "1" (uuid 3fe2272d-a6a8-45a2-82ed-bf7c84ff61c3))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0133") (unit 1)
         )
@@ -3622,7 +4008,7 @@
     )
     (pin "1" (uuid 38c4c64a-757f-484e-99e4-2f9313846f51))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0106") (unit 1)
         )
@@ -3648,7 +4034,7 @@
     (pin "1" (uuid 9db253ce-c417-43c8-b9ca-4fef9ac6a31e))
     (pin "2" (uuid ea06a5f4-6511-47f2-a3ab-c3cd71caabff))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R8") (unit 1)
         )
@@ -3676,9 +4062,34 @@
     (pin "3" (uuid 34748d37-19c5-4d55-bde1-ac260c390e42))
     (pin "4" (uuid f6a21e93-7ead-430e-abe3-45f9f0be489c))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "Earth_3") (lib_id "power:Earth") (at 201.93 193.04 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2bf3b750-9678-4701-abc1-94574b08a939)
+    (property "Reference" "#PWR04" (at 201.93 199.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Earth" (at 201.93 196.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 201.93 193.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 201.93 193.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8d146e0f-a31e-4939-8fb5-edfb68a52cd7))
+    (instances
+      (project "ani_prototype"
+        (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -3702,7 +4113,7 @@
     (pin "1" (uuid 758a1edb-4578-43f4-85d2-ace6407e99d8))
     (pin "2" (uuid 2e6a560b-b272-4e69-bfb4-4c0b3979f084))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "SW1") (unit 1)
         )
@@ -3730,7 +4141,7 @@
     (pin "3" (uuid 6fc49d88-5869-4bd3-bde7-e93c327ceb20))
     (pin "4" (uuid ee9748d8-0714-4639-ae20-72240c56b3e3))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D14") (unit 1)
         )
@@ -3755,7 +4166,7 @@
     )
     (pin "1" (uuid 00bd7c52-4985-4dbf-b63d-5f9f45150f19))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0152") (unit 1)
         )
@@ -3781,7 +4192,7 @@
     (pin "1" (uuid 0c87dd8b-3048-4fee-be68-dcb0615fff52))
     (pin "2" (uuid 9e22588c-b510-4d54-8640-6aee7356a776))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C15") (unit 1)
         )
@@ -3809,7 +4220,7 @@
     (pin "3" (uuid a112d3c4-01f7-41fa-921b-56dcf6378a24))
     (pin "4" (uuid ce4e4167-42b5-4a89-99b5-f7c1df9d5e7e))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D24") (unit 1)
         )
@@ -3834,7 +4245,7 @@
     )
     (pin "1" (uuid c39cdfe7-e073-4104-b615-1b20a004f2a1))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0109") (unit 1)
         )
@@ -3859,7 +4270,7 @@
     )
     (pin "1" (uuid cb130138-4505-4113-a6b7-156d8d8f4d7a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0125") (unit 1)
         )
@@ -3884,7 +4295,7 @@
     )
     (pin "1" (uuid a1ec3150-2ba2-4dc0-81ea-7d9b478bbf2d))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0138") (unit 1)
         )
@@ -3910,7 +4321,7 @@
     (pin "1" (uuid e81db362-fa8c-46d6-af2b-9eb469ee0b43))
     (pin "2" (uuid 634aec80-7912-4b6b-8042-0784dc4e6f80))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D28") (unit 1)
         )
@@ -3936,7 +4347,7 @@
     (pin "1" (uuid 787b0113-61b8-45ac-8884-8c5f2f7eb915))
     (pin "2" (uuid 407163cf-3b85-4938-a32c-a067b918cd96))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C28") (unit 1)
         )
@@ -3961,7 +4372,7 @@
     )
     (pin "1" (uuid 58b76093-d919-4508-9227-b1409eaef63a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0163") (unit 1)
         )
@@ -3986,7 +4397,7 @@
     )
     (pin "1" (uuid d207b75c-704c-4c52-919e-8cfca388d60e))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0162") (unit 1)
         )
@@ -4011,7 +4422,7 @@
     )
     (pin "1" (uuid a3d16c44-a98d-45e1-b57f-8379cf95d153))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0101") (unit 1)
         )
@@ -4036,7 +4447,7 @@
     )
     (pin "1" (uuid 25fd75f8-1a4c-4d8e-bb2d-216128f64b39))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0108") (unit 1)
         )
@@ -4064,7 +4475,7 @@
     (pin "3" (uuid 72c244ad-238e-4b14-a8d2-3e836b3d3c4b))
     (pin "4" (uuid d3941979-01fc-47da-ac0c-1d6e25ece87a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D15") (unit 1)
         )
@@ -4089,7 +4500,7 @@
     )
     (pin "1" (uuid 91f0fe52-35f9-41e9-a304-13b230c0930d))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0145") (unit 1)
         )
@@ -4114,7 +4525,7 @@
     )
     (pin "1" (uuid 26f2a453-64a7-4bb9-8dc5-afe6d681c2e7))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0111") (unit 1)
         )
@@ -4139,7 +4550,7 @@
     )
     (pin "1" (uuid 4ef14b8b-fa77-42c9-a8bf-478169d7d0f1))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0113") (unit 1)
         )
@@ -4164,7 +4575,7 @@
     )
     (pin "1" (uuid 19057644-90d7-4972-8f9a-50cadf608442))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0144") (unit 1)
         )
@@ -4189,7 +4600,7 @@
     )
     (pin "1" (uuid 2387dc0e-f872-4819-a4e7-305ec0725eac))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0122") (unit 1)
         )
@@ -4215,7 +4626,7 @@
     (pin "1" (uuid ae4be5f3-8e70-43ad-b7e2-1f5b50097f56))
     (pin "2" (uuid a82b094e-8d8c-4e5a-8a69-fa876d7fcfcf))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C20") (unit 1)
         )
@@ -4240,7 +4651,7 @@
     )
     (pin "1" (uuid 77079618-ffad-41b8-870f-00cab570d4b7))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR03") (unit 1)
         )
@@ -4248,24 +4659,24 @@
     )
   )
 
-  (symbol (lib_id "power:Earth") (at 251.46 184.15 0) (unit 1)
+  (symbol (lib_id "power:Earth") (at 245.11 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4fe7baa2-9334-479b-831b-09067a768ea9)
-    (property "Reference" "#PWR0158" (at 251.46 190.5 0)
+    (property "Reference" "#PWR0158" (at 245.11 182.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "Earth" (at 251.46 187.96 0)
+    (property "Value" "Earth" (at 245.11 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "" (at 251.46 184.15 0)
+    (property "Footprint" "" (at 245.11 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 251.46 184.15 0)
+    (property "Datasheet" "~" (at 245.11 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8c35a099-c3e0-47b8-adcc-3e4c2f0cdd0c))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0158") (unit 1)
         )
@@ -4290,7 +4701,7 @@
     )
     (pin "1" (uuid 5c92b80c-73bf-4695-95a9-41a8b2e340ba))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0103") (unit 1)
         )
@@ -4298,24 +4709,24 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 205.74 166.37 90) (unit 1)
+  (symbol (lib_id "power:+5V") (at 199.39 158.75 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 529018e3-64c0-4d16-9733-5ba2ce0984f0)
-    (property "Reference" "#PWR0157" (at 209.55 166.37 0)
+    (property "Reference" "#PWR0157" (at 203.2 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 201.93 166.3699 90)
+    (property "Value" "+5V" (at 195.58 158.7499 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 205.74 166.37 0)
+    (property "Footprint" "" (at 199.39 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 205.74 166.37 0)
+    (property "Datasheet" "" (at 199.39 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 43489223-fb95-44cc-a5b1-af2c60fa8351))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0157") (unit 1)
         )
@@ -4343,7 +4754,7 @@
     (pin "3" (uuid 6b286709-b96d-4960-805c-ab05a391387e))
     (pin "4" (uuid 3494fd7c-a5e3-4a15-8485-fe8a42a963c5))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D23") (unit 1)
         )
@@ -4371,7 +4782,7 @@
     (pin "3" (uuid 1007a2d9-cdfc-4206-bb22-638cf61afebd))
     (pin "4" (uuid 93b5d8bb-7ff8-4e28-bf9a-5f3862d56c83))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D22") (unit 1)
         )
@@ -4399,7 +4810,7 @@
     (pin "3" (uuid 9bc7a190-a357-4404-859e-ad98af6f3bd9))
     (pin "4" (uuid fb9fb53a-e0ba-4477-a084-e450c8fa3775))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D4") (unit 1)
         )
@@ -4424,7 +4835,7 @@
     )
     (pin "1" (uuid 298533f4-f39a-4121-bd89-a6831e6ebf7c))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0110") (unit 1)
         )
@@ -4449,7 +4860,7 @@
     )
     (pin "1" (uuid e9b82356-9454-4a20-b51a-4e9ace5a642c))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0143") (unit 1)
         )
@@ -4474,7 +4885,7 @@
     )
     (pin "1" (uuid 50b13c8f-eee7-4b6d-ae92-107a3ef4864a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0118") (unit 1)
         )
@@ -4500,7 +4911,7 @@
     (pin "1" (uuid 559455e5-4411-43b5-bc57-d49cf9e7f9c4))
     (pin "2" (uuid f38234e2-750e-4348-b781-e198867654fd))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C8") (unit 1)
         )
@@ -4526,7 +4937,7 @@
     (pin "1" (uuid b2b689f2-754b-4d5b-aae9-ea1738a4c987))
     (pin "2" (uuid e18be184-a0a6-4fdb-ad83-919c6aad7ee5))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D27") (unit 1)
         )
@@ -4552,7 +4963,7 @@
     (pin "1" (uuid b11198dd-c766-4155-9fdc-67b07c696ba4))
     (pin "2" (uuid 3637e653-11c5-486e-9652-077c4aef0564))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C12") (unit 1)
         )
@@ -4578,7 +4989,7 @@
     (pin "1" (uuid d039d068-9b9a-4b52-9283-216581002d9a))
     (pin "2" (uuid 3b934b28-6714-4a8e-9be1-969932b213bd))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C21") (unit 1)
         )
@@ -4604,7 +5015,7 @@
     (pin "1" (uuid 6601dba8-18e2-46cd-b8f5-b99d01a53abb))
     (pin "2" (uuid 963eb412-8a18-492c-b8b2-29972c56d1e5))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R11") (unit 1)
         )
@@ -4630,7 +5041,7 @@
     (pin "1" (uuid 9c04f473-b243-40ef-9563-c2e0a421dfe9))
     (pin "2" (uuid 6bf9894a-6d6b-4527-b920-34602857c8c6))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C16") (unit 1)
         )
@@ -4656,7 +5067,7 @@
     (pin "1" (uuid c4f3ebeb-1773-4b2a-b7dc-f7b4605a45c9))
     (pin "2" (uuid 529146fb-1698-4339-b922-0c5a79a7bf1b))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C7") (unit 1)
         )
@@ -4682,7 +5093,7 @@
     (pin "1" (uuid 6f84d553-3a66-43bc-a97c-bee8df00c464))
     (pin "2" (uuid 030e6dea-8bf0-4b8d-801b-5afee1728bb3))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "SW2") (unit 1)
         )
@@ -4707,7 +5118,7 @@
     )
     (pin "1" (uuid e6da0ca5-b79e-41c5-a986-bfccf601df2c))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0167") (unit 1)
         )
@@ -4732,7 +5143,7 @@
     )
     (pin "1" (uuid 67df9289-b73c-48a8-a922-f3e3bae8268a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0114") (unit 1)
         )
@@ -4757,7 +5168,7 @@
     )
     (pin "1" (uuid 117a0461-7ffc-43ac-a8ec-cb415f87c950))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0115") (unit 1)
         )
@@ -4782,7 +5193,7 @@
     )
     (pin "1" (uuid af39394d-566d-4122-a8cc-3c813df2fde7))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0151") (unit 1)
         )
@@ -4808,7 +5219,7 @@
     (pin "1" (uuid 72571bf7-eff4-4f9b-b2d4-97e54e435b99))
     (pin "2" (uuid 551b95bf-ec4f-40a8-beb9-1ec03ed7bfd0))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D26") (unit 1)
         )
@@ -4833,7 +5244,7 @@
     )
     (pin "1" (uuid be766fd9-1cd1-4773-a427-4213b1f29135))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0172") (unit 1)
         )
@@ -4858,7 +5269,7 @@
     )
     (pin "1" (uuid 97c3e9fd-bea6-467c-b761-bbdd0760506a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0139") (unit 1)
         )
@@ -4883,7 +5294,7 @@
     )
     (pin "1" (uuid 6e577339-472b-4d9a-90a6-74d87099d9b1))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0126") (unit 1)
         )
@@ -4908,7 +5319,7 @@
     )
     (pin "1" (uuid f783aaec-416b-4802-87dc-c243064ce52e))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0129") (unit 1)
         )
@@ -4934,7 +5345,7 @@
     (pin "1" (uuid 37f13ba7-ff63-4b92-97a4-d3ab308c8bf8))
     (pin "2" (uuid 685245ad-6971-4c8d-8d3a-c110760076d7))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R2") (unit 1)
         )
@@ -4959,7 +5370,7 @@
     )
     (pin "1" (uuid d7727d85-484e-4947-92c6-8e718e462a8f))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0132") (unit 1)
         )
@@ -4967,24 +5378,24 @@
     )
   )
 
-  (symbol (lib_id "power:Earth") (at 251.46 179.07 0) (unit 1)
+  (symbol (lib_id "power:Earth") (at 245.11 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7702553d-26e4-47a8-a160-a1c08e4d88ca)
-    (property "Reference" "#PWR0159" (at 251.46 185.42 0)
+    (property "Reference" "#PWR0159" (at 245.11 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "Earth" (at 251.46 182.88 0)
+    (property "Value" "Earth" (at 245.11 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "" (at 251.46 179.07 0)
+    (property "Footprint" "" (at 245.11 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 251.46 179.07 0)
+    (property "Datasheet" "~" (at 245.11 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2275b32a-d571-4035-a2a0-5b0c76dd47f9))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0159") (unit 1)
         )
@@ -5009,7 +5420,7 @@
     )
     (pin "1" (uuid e16607ad-326c-4801-a924-d80794313f71))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0153") (unit 1)
         )
@@ -5034,7 +5445,7 @@
     )
     (pin "1" (uuid 9c07778f-d347-493f-9e15-296af4624fae))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0156") (unit 1)
         )
@@ -5059,7 +5470,7 @@
     )
     (pin "1" (uuid e90b69e7-f120-4e33-80ce-fb5c7f80609c))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0121") (unit 1)
         )
@@ -5084,7 +5495,7 @@
     )
     (pin "1" (uuid 8af540ab-86b1-4fd9-8c17-4f09e350d160))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0147") (unit 1)
         )
@@ -5110,7 +5521,7 @@
     (pin "1" (uuid f9703dd2-7edf-4754-a4d1-ce76c683f566))
     (pin "2" (uuid cc7677e0-4cd9-4570-85fd-6fc74fd44b2b))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C4") (unit 1)
         )
@@ -5135,7 +5546,7 @@
     )
     (pin "1" (uuid b8ae8ea0-645d-4a21-999f-cf9a0644f358))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0124") (unit 1)
         )
@@ -5161,7 +5572,7 @@
     (pin "1" (uuid 95a2d255-920c-4178-9170-981c48646c73))
     (pin "2" (uuid e0ce3101-8c76-4fb3-95de-e5f401639367))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C19") (unit 1)
         )
@@ -5169,25 +5580,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 251.46 176.53 90) (unit 1)
+  (symbol (lib_id "Device:R") (at 245.11 168.91 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 81e48512-69e9-4a77-a8b4-ea57dbc83a48)
-    (property "Reference" "R14" (at 246.38 175.26 90)
+    (property "Reference" "R14" (at 240.03 167.64 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "5.1k" (at 251.46 176.53 90)
+    (property "Value" "5.1k" (at 245.11 168.91 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 251.46 178.308 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 245.11 170.688 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 251.46 176.53 0)
+    (property "Datasheet" "~" (at 245.11 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 81050e87-841b-431b-8a15-3976423b6621))
     (pin "2" (uuid e8f65e9a-7114-4c7d-a219-5f2a2a3af122))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R14") (unit 1)
         )
@@ -5212,7 +5623,7 @@
     )
     (pin "1" (uuid 0174f86a-c9e2-456e-9b23-b1e3587b6b10))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0148") (unit 1)
         )
@@ -5238,7 +5649,7 @@
     (pin "1" (uuid c8eef9a4-dcbc-42b8-bf2a-acbd29ceadca))
     (pin "2" (uuid a99aada6-0e80-4bc1-bdab-fbbda9c3c80a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C13") (unit 1)
         )
@@ -5263,7 +5674,7 @@
     )
     (pin "1" (uuid fca21216-6925-449c-b6ba-49e7b89bcadc))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0171") (unit 1)
         )
@@ -5288,7 +5699,7 @@
     )
     (pin "1" (uuid 49e53f41-b089-4e30-ab7c-fb89155edc4b))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0123") (unit 1)
         )
@@ -5313,7 +5724,7 @@
     )
     (pin "1" (uuid e9746245-2a32-44c9-bd9d-227f94689b41))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0135") (unit 1)
         )
@@ -5339,7 +5750,7 @@
     (pin "1" (uuid 12719427-5603-489f-9a81-4165cab2e904))
     (pin "2" (uuid 241c4ca8-1e1c-4eda-a405-66ddd0f2bb54))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C14") (unit 1)
         )
@@ -5367,7 +5778,7 @@
     (pin "3" (uuid 46f20da3-d2c4-4be9-9f5b-d310b175f2b2))
     (pin "4" (uuid 6806b29a-d84a-4599-b646-712c296c348a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D18") (unit 1)
         )
@@ -5450,7 +5861,7 @@
     (pin "8" (uuid d2039902-7f4d-47fe-afeb-69886724b602))
     (pin "9" (uuid 6aff483a-30b3-41dc-87cd-0d563b06e539))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "U4") (unit 1)
         )
@@ -5475,7 +5886,7 @@
     )
     (pin "1" (uuid e198cc2f-c19b-4035-9b30-e6e6a66791a3))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0127") (unit 1)
         )
@@ -5500,7 +5911,7 @@
     )
     (pin "1" (uuid 872db2dc-d346-4c64-9244-e5c0551727bf))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0119") (unit 1)
         )
@@ -5525,7 +5936,7 @@
     )
     (pin "1" (uuid b9d79f9b-02fb-4596-ab4c-511c59dda4fe))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0134") (unit 1)
         )
@@ -5551,7 +5962,7 @@
     (pin "1" (uuid 24249f2c-06a5-4bfe-bfbe-3ac3f886c72b))
     (pin "2" (uuid 286ab34e-b0aa-46ec-b4b7-28c450c5b296))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R10") (unit 1)
         )
@@ -5577,7 +5988,7 @@
     (pin "1" (uuid fdc777e9-17d3-4c29-99bb-bfbb6f560530))
     (pin "2" (uuid 236c78c2-ccd9-4799-837f-626a12fc0a7d))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C6") (unit 1)
         )
@@ -5602,7 +6013,7 @@
     )
     (pin "1" (uuid 5a324a9c-abdb-4f44-a6a1-5ff6f29a1060))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR01") (unit 1)
         )
@@ -5629,7 +6040,7 @@
     (pin "2" (uuid de724b6b-84d9-488c-b6e3-ccaedcba33bc))
     (pin "3" (uuid 4ba039a7-f09d-40c4-81cb-d56cec2347b7))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "Q1") (unit 1)
         )
@@ -5657,7 +6068,7 @@
     (pin "3" (uuid cd81e7fd-2c76-4133-87dd-3b28a464323c))
     (pin "4" (uuid 98589f51-51c2-4211-9e83-27ac65811f19))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D2") (unit 1)
         )
@@ -5685,7 +6096,7 @@
     (pin "3" (uuid dc2fb9e4-96a5-41f8-a195-7781dbc6c642))
     (pin "4" (uuid 1b97ec23-37ab-4266-9d2b-4557c1ec503a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D6") (unit 1)
         )
@@ -5710,7 +6121,7 @@
     )
     (pin "1" (uuid 97c7104b-5153-4cca-98d7-78241c7d30f2))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0128") (unit 1)
         )
@@ -5718,26 +6129,26 @@
     )
   )
 
-  (symbol (lib_name "Earth_1") (lib_id "power:Earth") (at 196.85 168.91 0) (unit 1)
+  (symbol (lib_name "Earth_1") (lib_id "power:Earth") (at 184.15 161.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a39d30d4-c33b-4c5f-8c23-6f890145bf85)
-    (property "Reference" "#PWR?" (at 196.85 175.26 0)
+    (property "Reference" "#PWR0165" (at 184.15 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "Earth" (at 196.85 172.72 0)
+    (property "Value" "Earth" (at 184.15 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "" (at 196.85 168.91 0)
+    (property "Footprint" "" (at 184.15 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 196.85 168.91 0)
+    (property "Datasheet" "~" (at 184.15 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 00fb8be0-e40c-4655-87cc-aee46994617f))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0165") (unit 1)
         )
       )
     )
@@ -5761,7 +6172,7 @@
     (pin "1" (uuid 0303e6be-ec48-4206-9538-7905faeb7195))
     (pin "2" (uuid 410c94a3-2a04-4662-93f3-ea36972ae285))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C22") (unit 1)
         )
@@ -5787,7 +6198,7 @@
     (pin "1" (uuid 7f8998b0-73e3-493d-afc3-8da0052678fb))
     (pin "2" (uuid 5bac8a56-8271-453b-9994-6bf137b7a3d2))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R12") (unit 1)
         )
@@ -5812,7 +6223,7 @@
     )
     (pin "1" (uuid 606dc9e0-ffff-44c3-bb5c-c09e7a74cafd))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0120") (unit 1)
         )
@@ -5837,7 +6248,7 @@
     )
     (pin "1" (uuid 41a85b80-9d5f-422e-b0ad-67550a6055f6))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0142") (unit 1)
         )
@@ -5862,7 +6273,7 @@
     )
     (pin "1" (uuid 7abdf73f-755f-4f38-b587-a5af3317eb17))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0117") (unit 1)
         )
@@ -5888,7 +6299,7 @@
     (pin "1" (uuid 4f5639ce-f360-4a5d-9782-bce9b2f8e357))
     (pin "2" (uuid ae953ec8-e354-4cbf-b742-66acee8fdd19))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C3") (unit 1)
         )
@@ -5913,7 +6324,7 @@
     )
     (pin "1" (uuid 0b381f2f-8abe-44bc-aa14-25fb9408b618))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0104") (unit 1)
         )
@@ -5939,7 +6350,7 @@
     (pin "1" (uuid 6441a5af-a209-4fca-a9f9-685a015ce016))
     (pin "2" (uuid 410bcea8-5633-4fd2-8925-80882cc0e932))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C18") (unit 1)
         )
@@ -5964,7 +6375,7 @@
     )
     (pin "1" (uuid 47cb551a-f32c-4bd8-9b96-d84ca75343a4))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0150") (unit 1)
         )
@@ -5990,7 +6401,7 @@
     (pin "1" (uuid 1bdc205c-ab9e-4e5d-ab7e-959bd9bc336f))
     (pin "2" (uuid ed5381ad-ce94-47b2-9bb0-fa3fffe4be90))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C24") (unit 1)
         )
@@ -6016,7 +6427,7 @@
     (pin "1" (uuid d58df242-6301-4261-a2ea-c0ba7de78926))
     (pin "2" (uuid 146c24f0-6342-46ed-97c4-c316d1918e84))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R9") (unit 1)
         )
@@ -6042,7 +6453,7 @@
     (pin "1" (uuid e57258bc-6b7f-461e-b108-948aef851a37))
     (pin "2" (uuid 19ba9ccd-c37f-4c92-909a-f1767fa3ba8c))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R6") (unit 1)
         )
@@ -6070,7 +6481,7 @@
     (pin "3" (uuid de82a6bd-9c1b-41bf-a472-b79f84df466d))
     (pin "4" (uuid fa0a1696-a28e-4e52-aa81-9f98562b38f1))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D20") (unit 1)
         )
@@ -6095,7 +6506,7 @@
     )
     (pin "1" (uuid 0d1b6fbd-d7dc-4674-99ad-535a6028ef33))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0155") (unit 1)
         )
@@ -6121,7 +6532,7 @@
     (pin "1" (uuid 34a97a73-be2d-491c-a682-8f666baff5e3))
     (pin "2" (uuid b8516210-1752-4bc1-bdae-ea9c29249def))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C23") (unit 1)
         )
@@ -6146,7 +6557,7 @@
     )
     (pin "1" (uuid 46a5f0d7-8487-45f7-898a-3d928d74d39b))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0116") (unit 1)
         )
@@ -6172,7 +6583,7 @@
     (pin "1" (uuid a6c455ec-bbc7-4aaa-b4b3-100e11e5fea6))
     (pin "2" (uuid d6498ffc-2f22-45a3-993c-f84427ba080e))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C1") (unit 1)
         )
@@ -6198,7 +6609,7 @@
     (pin "1" (uuid 2d119de8-5e86-4d0e-882b-734eda033776))
     (pin "2" (uuid ca9e95b6-9138-4154-9a95-8e1e200ef4d4))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C32") (unit 1)
         )
@@ -6223,7 +6634,7 @@
     )
     (pin "1" (uuid 825eced3-477d-46bc-8e9d-b1940306bb4d))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR02") (unit 1)
         )
@@ -6231,26 +6642,26 @@
     )
   )
 
-  (symbol (lib_name "Earth_2") (lib_id "power:Earth") (at 255.27 176.53 0) (unit 1)
+  (symbol (lib_name "Earth_2") (lib_id "power:Earth") (at 248.92 168.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ca51468e-e0c2-402f-8bac-92972c8d5b7e)
-    (property "Reference" "#PWR?" (at 255.27 182.88 0)
+    (property "Reference" "#PWR0154" (at 248.92 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "Earth" (at 255.27 180.34 0)
+    (property "Value" "Earth" (at 248.92 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "" (at 255.27 176.53 0)
+    (property "Footprint" "" (at 248.92 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 255.27 176.53 0)
+    (property "Datasheet" "~" (at 248.92 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid dcc3c66a-77f7-45fe-9d29-b5c9ea4e24a7))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0154") (unit 1)
         )
       )
     )
@@ -6274,9 +6685,43 @@
     (pin "1" (uuid ee2faae8-0fe6-445c-ba16-64d3d06d00b6))
     (pin "2" (uuid ec925690-1ef5-4e4d-b495-dc686497cda9))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C29") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Power_Protection:TPD4E02B04DQA") (at 220.98 190.5 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d0fdd716-975b-4101-9d94-ea4ef9fb7702)
+    (property "Reference" "U5" (at 234.95 189.865 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TPD4E02B04DQA" (at 234.95 192.405 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm" (at 220.98 198.12 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf" (at 220.98 193.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "3" (uuid 750e3bdb-91fc-45af-82a8-6a48507e5a36))
+    (pin "1" (uuid 8714a117-627d-45cc-912e-1d3da8483edb))
+    (pin "10" (uuid 90ddcebe-ee70-4a11-85c0-ac1869b5d01e))
+    (pin "2" (uuid 73c72aa1-779c-47e9-9a5d-9ab438c1a0da))
+    (pin "4" (uuid b9ebbb4b-5abd-4297-bf0c-7d1771eed2c8))
+    (pin "5" (uuid 6a89b8c1-88d0-4e8a-829e-c4cbaf7e78f3))
+    (pin "6" (uuid b3f7092d-9899-4a33-a6dc-e12b341453d0))
+    (pin "7" (uuid 95f607f1-3733-4159-ab74-9508998c389d))
+    (pin "8" (uuid 21bbaf7f-8381-45b0-9811-880f55183ec5))
+    (pin "9" (uuid 9256bf32-6885-4e2b-bd11-b087eccb4c9f))
+    (instances
+      (project "ani_prototype"
+        (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -6300,7 +6745,7 @@
     (pin "1" (uuid 3f019ff8-85a5-45ec-a5b5-b259daaef544))
     (pin "2" (uuid 9df93e39-9ee2-44c6-8b3c-7b97e2620322))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R7") (unit 1)
         )
@@ -6328,7 +6773,7 @@
     (pin "3" (uuid d9625405-ec7c-4675-aca4-2d2d8c244396))
     (pin "4" (uuid 6f30cf27-8a10-4a74-9f5c-a93b022f20a9))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D12") (unit 1)
         )
@@ -6368,7 +6813,7 @@
     (pin "8" (uuid 9fa50899-cdfc-4060-a6f5-13a7f343b7d2))
     (pin "9" (uuid 343ea3af-c48f-47b2-b3fc-b377e256b333))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "U3") (unit 1)
         )
@@ -6393,7 +6838,7 @@
     )
     (pin "1" (uuid 480e30d2-7ccc-4374-902a-f15022934f7a))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0149") (unit 1)
         )
@@ -6421,7 +6866,7 @@
     (pin "3" (uuid 5ea7ac9b-45ac-4e9c-af4e-d9ea16901445))
     (pin "4" (uuid 06ea8fb5-2fe8-4418-89cb-7f3fdef3479d))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D3") (unit 1)
         )
@@ -6449,7 +6894,7 @@
     (pin "3" (uuid 678e1ca2-b905-41b8-97fa-27775263a550))
     (pin "4" (uuid c771dfa2-7b8e-4d61-9d43-bf4b5b4f4d0d))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D17") (unit 1)
         )
@@ -6475,7 +6920,7 @@
     (pin "1" (uuid 138cc7ac-d288-404d-b45c-3d4a6de5c188))
     (pin "2" (uuid 37b8273d-a0c8-457d-82bf-2cd3c0262921))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C11") (unit 1)
         )
@@ -6483,25 +6928,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 205.74 168.91 90) (unit 1)
+  (symbol (lib_id "Device:R") (at 199.39 161.29 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d988dbe6-594f-40d2-aad7-87dde38ef988)
-    (property "Reference" "R13" (at 210.82 167.64 90)
+    (property "Reference" "R13" (at 204.47 160.02 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "5.1k" (at 205.74 168.91 90)
+    (property "Value" "5.1k" (at 199.39 161.29 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 205.74 170.688 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 199.39 163.068 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 205.74 168.91 0)
+    (property "Datasheet" "~" (at 199.39 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d32ae3c3-ee18-4b47-bb2a-75c912a16e02))
     (pin "2" (uuid eb85d1be-6243-4cc0-989a-90e8ede69734))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R13") (unit 1)
         )
@@ -6528,7 +6973,7 @@
     (pin "2" (uuid 27f27e65-afe7-4951-b37d-04d8a3dd68e2))
     (pin "3" (uuid 0bc8036e-c3f9-41ba-a38e-f6c4daa96629))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "U1") (unit 1)
         )
@@ -6554,7 +6999,7 @@
     (pin "1" (uuid 36570ad9-fb7c-4f83-8007-6987a46ae93a))
     (pin "2" (uuid 689c82e3-3915-43ef-a313-e9c9958d2f57))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R4") (unit 1)
         )
@@ -6579,7 +7024,7 @@
     )
     (pin "1" (uuid f11b3979-40b0-4c86-bc3f-eab98c613693))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0105") (unit 1)
         )
@@ -6604,7 +7049,7 @@
     )
     (pin "1" (uuid 26e27086-5841-4828-9dfd-d710a7a814a0))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0136") (unit 1)
         )
@@ -6630,7 +7075,7 @@
     (pin "1" (uuid 9f39c5ec-0941-4e54-9a59-6a4c6720d524))
     (pin "2" (uuid fbebb9b9-62e6-40ae-a5c0-07cb7d69adfe))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C25") (unit 1)
         )
@@ -6655,7 +7100,7 @@
     )
     (pin "1" (uuid 9c04ce58-8887-4a60-9199-63bca25645b1))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0166") (unit 1)
         )
@@ -6683,7 +7128,7 @@
     (pin "3" (uuid b474b86c-c851-44d7-9701-e36a0479a080))
     (pin "4" (uuid f8e13a09-8bf8-4c06-8859-e8e80d20de89))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D10") (unit 1)
         )
@@ -6708,7 +7153,7 @@
     )
     (pin "1" (uuid 84ffdb25-fa10-424a-b88c-0bad36b66bbd))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0137") (unit 1)
         )
@@ -6733,7 +7178,7 @@
     )
     (pin "1" (uuid 2fd6180c-509f-4ab9-81a2-bdf69c164111))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0107") (unit 1)
         )
@@ -6761,7 +7206,7 @@
     (pin "3" (uuid f7ac631f-22c4-47e3-96d8-983bfdfb9768))
     (pin "4" (uuid b8b0e2e9-930f-49b1-969d-40afd4085d35))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D7") (unit 1)
         )
@@ -6789,7 +7234,7 @@
     (pin "3" (uuid 108cc9f5-cde2-490c-9ddb-08cde4ab12c0))
     (pin "4" (uuid a9a5ec27-dcd9-4c8d-96ab-47659e7671e1))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D16") (unit 1)
         )
@@ -6815,7 +7260,7 @@
     (pin "1" (uuid edd776d8-b48f-4a41-873d-625834d31bbe))
     (pin "2" (uuid f48c92c1-0bf0-44c7-8dd8-eb7b289d83d1))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R1") (unit 1)
         )
@@ -6843,7 +7288,7 @@
     (pin "3" (uuid bed1c71b-b3fd-4a3a-99b3-b645a0ebf86d))
     (pin "4" (uuid 11718bac-1b14-45db-b0a7-7fcae4ad3663))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D11") (unit 1)
         )
@@ -6868,7 +7313,7 @@
     )
     (pin "1" (uuid 6a1b7013-2402-4255-bf8d-46e2bfb7e878))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0102") (unit 1)
         )
@@ -6896,7 +7341,7 @@
     (pin "3" (uuid c9e3d9c0-4172-473f-be39-9a98ce7cee58))
     (pin "4" (uuid dfdb0840-8ec0-4d95-bf96-a16218082f38))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D9") (unit 1)
         )
@@ -6904,24 +7349,24 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 251.46 166.37 270) (unit 1)
+  (symbol (lib_id "power:+5V") (at 245.11 158.75 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eb541f65-4a59-4768-a53d-cc1449615051)
-    (property "Reference" "#PWR0160" (at 247.65 166.37 0)
+    (property "Reference" "#PWR0160" (at 241.3 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 255.27 166.3699 90)
+    (property "Value" "+5V" (at 248.92 158.7499 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 251.46 166.37 0)
+    (property "Footprint" "" (at 245.11 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 251.46 166.37 0)
+    (property "Datasheet" "" (at 245.11 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 97f5345f-b65e-4970-929d-e0f6478281fb))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0160") (unit 1)
         )
@@ -6947,7 +7392,7 @@
     (pin "1" (uuid 916a1587-f207-4940-9bbb-563013945be5))
     (pin "2" (uuid 0d5175cb-ddc9-4120-8608-d3ec8b7aa6b9))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C31") (unit 1)
         )
@@ -6973,7 +7418,7 @@
     (pin "1" (uuid 3d00eff6-62da-4b0a-b1ff-196189835a45))
     (pin "2" (uuid 5b1f904d-2774-422f-baf1-c6f7427a0c2b))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R3") (unit 1)
         )
@@ -6999,7 +7444,7 @@
     (pin "1" (uuid d7ddf4ac-7cb4-4ccf-a670-0958d3310b4c))
     (pin "2" (uuid 6e88fc38-f475-4086-962e-ca5f4a762e3c))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C2") (unit 1)
         )
@@ -7025,7 +7470,7 @@
     (pin "1" (uuid db35a7e8-76ea-4b94-beab-0f9495106c60))
     (pin "2" (uuid 14cc9cd5-5519-48cd-acb0-e9a7ff847237))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C10") (unit 1)
         )
@@ -7050,7 +7495,7 @@
     )
     (pin "1" (uuid ddd082c4-8bb6-4d55-ae04-ca94883bb247))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0168") (unit 1)
         )
@@ -7076,7 +7521,7 @@
     (pin "1" (uuid 230ca5c9-883f-44df-af99-496af226a39a))
     (pin "2" (uuid 23a8aed8-89ae-414b-ae5c-b1dc379c1afe))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "R5") (unit 1)
         )
@@ -7102,7 +7547,7 @@
     (pin "1" (uuid 0115b23e-4f82-4bda-9491-2c0ccdc040e9))
     (pin "2" (uuid c1262369-3d2a-4e38-b265-6d6eb2360ac3))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C26") (unit 1)
         )
@@ -7127,7 +7572,7 @@
     )
     (pin "1" (uuid 35c18846-8f56-4d77-954f-a7612cd06c89))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0141") (unit 1)
         )
@@ -7152,7 +7597,7 @@
     )
     (pin "1" (uuid 11d4bab9-0aa9-4419-9945-7d6ae99a885c))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0164") (unit 1)
         )
@@ -7180,7 +7625,7 @@
     (pin "3" (uuid 309778b8-099c-44ed-a19f-b71aaf9e730f))
     (pin "4" (uuid f09c21cd-afce-42b0-a558-f9dfc688a457))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "D5") (unit 1)
         )
@@ -7206,7 +7651,7 @@
     (pin "1" (uuid 0776307a-ab68-4fec-b51b-84bf736e497d))
     (pin "2" (uuid b879fabb-ed8e-40c9-88d7-6ff246fa53f0))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "C9") (unit 1)
         )
@@ -7231,7 +7676,7 @@
     )
     (pin "1" (uuid 13a7febb-80ab-4a36-acaa-1374b96dec65))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0169") (unit 1)
         )
@@ -7256,7 +7701,7 @@
     )
     (pin "1" (uuid 7c3b3788-43ab-454e-95f1-2218cb67c5b1))
     (instances
-      (project "ESP-Neopixel"
+      (project "ani_prototype"
         (path "/f361dedd-a79c-4647-b3ec-a38101fa8a40"
           (reference "#PWR0130") (unit 1)
         )
