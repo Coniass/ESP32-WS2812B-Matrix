@@ -4,7 +4,7 @@ This is a project to build a LED matrix controller using an ESP32 microcontrolle
 
 ## Overview
 
-The ESP32 microcontroller will be used to drive a 25 WS2812B LED matrix. The WS2812B LEDs will be mounted on the same PCB as the ESP32. A TPD4E02B04 will be used to protect the board from voltage spikes. An AMS1117 3.3V voltage regulator will convert the 5V power from the USB C port to 3.3V power for the ESP32. The CH340 USB to serial converter will be used for programming the ESP32 and for USB connectivity.
+The ESP32 microcontroller will be used to drive a 25 WS2812B LED matrix. The WS2812B LEDs will be mounted on the same PCB as the ESP32. A TPD4E02B04 will be used to protect the board from voltage spikes. An AZ1117IH 3.3V voltage regulator will convert the 5V power from the USB C port to 3.3V power for the ESP32. The CH340 USB to serial converter will be used for programming the ESP32 and for USB connectivity.
 
 ## Circuit Diagram
 
